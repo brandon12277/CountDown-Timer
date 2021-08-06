@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="script.js"></script>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Antonio:wght@100;200;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Zen+Dots&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap" rel="stylesheet">     
+   
+    <title>Event Coutdown Timer</title>
+</head>
+<body>
+  
+  <div class="form_event">
+ <h1 class="heading">COUTDOWN TIMER</h1>
+ <div class="instructions">
+  <ul>
+    Instructions:
+    <li>Click the boxes and set the time for the timer with respect to the fields</li>
+    <li>Click s,h,m,d key and use the mousewheel to set the values 
+      respectively for seconds,hours,minutes,days or 
+      you can type the values of the respective</li>
+    <li>Click the enter button to start the clock</li>
+    
+   </ul>
+ </div>
+ 
+</p1>
+ <div class="clock">
+    <div class="days">
+      <div class="days_tens" contenteditable="" onkeypress="isnotdigit(event)"  id="countdown" ></div>
+      <div class="days_units" contenteditable="" onkeypress="isnotdigit(event)"  id="countdown"></div>
+    </div>
+    <h1 class="colon">:</h1>
+    <div class="hours">
+      <div class="hours_tens" contenteditable="" onkeypress="isnotdigit(event)"  id="countdown"></div>
+      <div class="hours_units" contenteditable="" onkeypress="isnotdigit(event)"  id="countdown"></div>
+    </div>
+    <h1 class="colon">:</h1>
+    <div class="minutes">
+      <div class="minutes_tens" contenteditable="" onkeypress="isnotdigit(event)"  id="countdown"></div>
+      <div class="minutes_units" contenteditable="" onkeypress="isnotdigit(event)"  id="countdown"></div>
+    </div>
+    <h1 class="colon">:</h1>
+    <div  class="seconds" >
+      <div class="seconds_tens" contenteditable="" onkeypress="isnotdigit(event)" id="countdown" ></div>
+      <div class="seconds_units" contenteditable="" onkeypress="isnotdigit(event)" id="countdown"></div>
+    </div>
+  </div>
+  <div class="days_hours_text">
+    <h2 id="timer_text">DAYS</h2>
+    <h2 id="timer_text">HOURS</h2>
+    <h2 id="timer_text">MINUTES</h2>
+    <h2 id="timer_text">SECONDS</h2>
+</div>
+
+</div>
+</body>
+</html>
